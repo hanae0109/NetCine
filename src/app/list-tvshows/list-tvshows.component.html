@@ -1,0 +1,6 @@
+<div *ngFor="let tvshow of tvshows">
+    <a routerLink="/tv/{{tvshow.id}}">
+        <img [src]="tvshow.img" />
+        {{ tvshow.title }}
+    </a>
+</div>

@@ -1,0 +1,7 @@
+<ng-container *ngIf="movie">
+    {{ movie.id }}<br/>
+    {{ movie.title }}<br/>
+    {{ movie.overview }}<br/>
+    <img [src]="movie.img" />
+    <a routerLink="/list-movies">Retour</a>
+</ng-container>

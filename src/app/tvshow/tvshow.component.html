@@ -1,0 +1,7 @@
+<ng-container *ngIf="tvshows">
+    {{ tvshows.id }}<br/>
+    {{ tvshows.title }}<br/>
+    {{ tvshows.overview }}<br/>
+    <img [src]="tvshows.img" />
+    <a routerLink="/list-tvshows">Retour</a>
+</ng-container>

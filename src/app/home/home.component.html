@@ -1,0 +1,11 @@
+<span class="searchbar">
+    <form [formGroup]="searchForm">
+        <input [formControl]="searchCtrl">
+    </form>
+</span>
+<div style="display:inner-block" *ngFor="let movie of movies">
+    <a routerLink="/movies/{{movie.id}}">
+        <img [src]="movie.img" />
+        {{ movie.title }}
+    </a>
+</div>
